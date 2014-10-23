@@ -1,6 +1,6 @@
 ﻿CC 		= g++
-CFLAGS 	= -o
-PARAM	= -Wall -g
+CFLAGS	= -Wall -g -Wno-delete-non-virtual-dtor
+LFLAGS 	= -o
 CUR		= .
 SRC		= $(CUR)/src
 SRCS	= $(SRC)/*.cpp
@@ -12,7 +12,7 @@ LIBS	= -lstdc++
    all:$(TARGET)
 
 $(TARGET): $(SRCS)
-	$(CC) $^ $(CFLAGS) $@ $(PARAM) $(INC) $(LIBS)
+	$(CC) $^ $(LFLAGS) $@ $(CFLAGS) $(INC) $(LIBS)
 
 create:
 	@-mkdir src/
