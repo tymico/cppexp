@@ -26,4 +26,7 @@
 #include "decorator/component.cpp"
 #include "decorator/decorator.cpp"
 
+#include "facade/subsystem.cpp"
+#include "facade/facade.cpp"
+
 #include "main.cpp"

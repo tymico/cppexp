@@ -10,7 +10,8 @@ int main(int, char **)
     //Adapter::test();
     //Bridge::test();
     //Composite::test();
-    Decorator::test();
+    //Decorator::test();
+    Facade::test();
 
     return 0;
 }
